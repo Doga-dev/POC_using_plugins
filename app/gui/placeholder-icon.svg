@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fond gris -->
+  <rect width="64" height="64" fill="#cccccc" rx="5" ry="5"/>
+  
+  <!-- Icône stylisée (puzzle piece) -->
+  <path d="M32,15 C29,15 27,17 27,20 L27,26 L21,26 C18,26 16,28 16,31 C16,34 18,36 21,36 L27,36 L27,42 C27,45 29,47 32,47 C35,47 37,45 37,42 L37,36 L43,36 C46,36 48,34 48,31 C48,28 46,26 43,26 L37,26 L37,20 C37,17 35,15 32,15 Z" fill="#666666"/>
+  
+  <!-- Bordure -->
+  <rect width="62" height="62" x="1" y="1" fill="none" stroke="#999999" stroke-width="2" rx="4" ry="4"/>
+</svg>
