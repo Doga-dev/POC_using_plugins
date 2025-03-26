@@ -4,10 +4,12 @@ set(CMAKE_AUTOUIC ON)
 
 # Sources de l'application
 set(SOURCES
+    ${PUBLIC_API_PATH}/IPlugin.h
+
     src/main.cpp
     src/PluginManager.cpp
     src/PluginManager.h
-    src/IPlugin.h
+
     gui/qml.qrc
 )
 
@@ -22,6 +24,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 # Inclure les répertoires pour les headers
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${PUBLIC_API_PATH}
 )
 
 # Lier avec les bibliothèques Qt

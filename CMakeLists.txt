@@ -12,6 +12,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick)
 
+SET(PUBLIC_API_PATH ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 SET(PLUGINS_BIN_PATH ${CMAKE_BINARY_DIR}/bin/plugins)
 
 # Créer un répertoire pour les plugins compilés

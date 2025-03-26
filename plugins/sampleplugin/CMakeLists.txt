@@ -1,5 +1,7 @@
 # Sources du plugin
 set(SOURCES
+    ${PUBLIC_API_PATH}/IPlugin.h
+
     src/SamplePlugin.cpp
     src/SamplePlugin.h
 )
@@ -16,7 +18,7 @@ set_target_properties(sampleplugin PROPERTIES
 # Inclure les répertoires pour les headers
 target_include_directories(sampleplugin PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
-    ${CMAKE_SOURCE_DIR}/app/src
+    ${PUBLIC_API_PATH}
 )
 
 # Lier avec les bibliothèques Qt
